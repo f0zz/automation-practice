@@ -2,6 +2,7 @@
 Library         Selenium2Library
 Resource        keywords/mg_keywords.robot
 
+
 *** Test Cases ***
 Start It Up
     Log In To Tab It
