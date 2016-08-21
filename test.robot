@@ -4,11 +4,12 @@ Resource        keywords/mg_keywords.robot
 
 
 *** Test Cases ***
-Start It Up
-    Log In To Tab It
+Log In And Close
+    Log In To Tab Tree
     Close All Browsers
 
-
-*** Keywords ***
-Log In To Tab It
-    Open To Tab Tree Using Chrome
+Create Valid New User
+    Open Chrome To Tab Tree
+    Create New User         eff    password    eff@example.com
+    Page Should Contain     Your Trees
+    Close All Browsers
